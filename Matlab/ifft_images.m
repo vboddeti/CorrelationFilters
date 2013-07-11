@@ -10,5 +10,5 @@ function X = ifft_images(img)
 X = zeros(m,n,num_img);
 
 for i = 1:num_img
-    X(:,:,i) = ifft2(img(:,:,i),'symmetric')/sqrt(m*n);
+    X(:,:,i) = ifft2(img(:,:,i),'symmetric')*sqrt(m*n);
 end

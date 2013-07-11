@@ -11,6 +11,6 @@ X = zeros(m,n,dim,num_img);
 
 for i = 1:num_img
     for j = 1:dim
-        X(:,:,j,i) = ifft2(img(:,:,j,i),'symmetric')/sqrt(m*n);
+        X(:,:,j,i) = ifft2(img(:,:,j,i),'symmetric')*sqrt(m*n);
     end
 end

@@ -40,11 +40,6 @@ clear Y2;
 K = (K'+K)/2;
 K = real(K);
 
-otsdf.filt_freq = reshape((Y*(K\A))',args.size);
+otsdf.filt_freq = reshape((Y*(K\A)),args.size);
 otsdf.filt = ifft_images(otsdf.filt_freq);
-
-for i = 1:size(otsdf.filt,3)
-    otsdf.filt(:,:,i) = rot90(otsdf.filt(:,:,i),2);
-end
-
 otsdf.shift = 1;

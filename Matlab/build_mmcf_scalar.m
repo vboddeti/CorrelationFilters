@@ -48,13 +48,8 @@ mmscf_model = svmtrain(A,K,param);
 
 Y = Y(:,mmscf_model.SVs);
 mmscf_weights = Y*mmscf_model.sv_coef;
-
-mmscf.filt_freq = reshape(mmscf_weights',args.size);
+mmscf.filt_freq = reshape(mmscf_weights,args.size);
 mmscf.filt = ifft_images(mmscf.filt_freq);
-
-for i = 1:size(mmscf.filt,3)
-    mmscf.filt(:,:,i) = rot90(mmscf.filt(:,:,i),2);
-end
 
 mmscf.b = mmscf_model.rho;
 mmscf.shift = 1;
