@@ -4,10 +4,10 @@ clear all
 close all
 clc
 
-args.alpha = 1e-3;
-args.beta = 1-args.alpha;
-args.C = 1;
-args.wpos = 1;
+global data
+global data_freq;
+global labels;
+global args;
 
 im = double(imread('data/auth1.pgm'));
 im = normalize_image(im);
@@ -51,87 +51,200 @@ Y(:,:,1,6) = l1;
 Y(:,:,2,6) = l2;
 X(:,:,1,6) = im;
 labels = [1,1,1,-1,-1,-1];
+labels = labels';
 
 [labels,ind] = sort(labels,'descend');
 X = X(:,:,:,ind);
 Y = Y(:,:,:,ind);
 
 %% Scalar Features
+% X contains scalar features
 
-num_channels = 1;
-args.size = [size(im) 1];
-num_img = 6;
+[m,n,dim,num_img] = size(X);
 
-for i = 1:num_img
-    img(i).im = X(:,:,:,i);
-    img(i).label = labels(i);
-end
+args.C = 1;
+args.alpha = 1e-3;
+args.beta = 1-args.alpha;
+args.img_size = [m,n,dim];
+args.dim = dim;
+args.t_init = 100;
+args.tolerance = 1e-8;
+args.max_iter = 1e6;
+args.batch_size = 2500;
+args.psd_flag = 0;
+args.fft_size = [m,n];
+args.fft_mask = ones(args.fft_size(1),args.fft_size(2),dim);
+args.fft_mask(1:m,1:n,:) = 0;
+args.target_magnitude = 1;
+args.target_sigma = 0.2;
+data = X;
 
-mmcf_scalar = build_mmcf_scalar(img,args);
-otsdf_scalar = build_otsdf_scalar(img,args);
-uotsdf_scalar = build_uotsdf_scalar(img,args);
+data_freq = fft2(data,args.fft_size(1),args.fft_size(2))/sqrt(prod(args.fft_size));
+otsdf = build_otsdf;
+uotsdf = build_uotsdf;
+% mmcf_dual = build_mmcf_dual;
+mmcf_primal = build_mmcf_primal;
 
-for i = 1:num_img
-    corrplane = xcorr2(X(:,:,1,i),mmcf_scalar.filt);
-    [corrplane,y,x] = compute_pce_plane(corrplane);
-    score = corrplane(x,y);
-    mesh(corrplane);title(score);pause(1);
-end
+args.psd_flag = 0;
+args.fft_size = 2*[m,n]-1;
+args.fft_mask = ones(args.fft_size(1),args.fft_size(2),dim);
+args.fft_mask(1:m,1:n,:) = 0;
+data_freq = fft2(data,args.fft_size(1),args.fft_size(2))/sqrt(prod(args.fft_size));
+zauotsdf = build_zauotsdf;
+zammcf = build_zammcf_primal;
 
-for i = 1:num_img
-    corrplane = xcorr2(X(:,:,1,i),otsdf_scalar.filt);
-    [corrplane,y,x] = compute_pce_plane(corrplane);
-    score = corrplane(x,y);
-    mesh(corrplane);title(score);pause(1);
-end
-
-for i = 1:num_img
-    corrplane = xcorr2(X(:,:,1,i),uotsdf_scalar.filt);
-    [corrplane,y,x] = compute_pce_plane(corrplane);
-    score = corrplane(x,y);
-    mesh(corrplane);title(score);pause(1);
-end
-
-%% Vector Features
-
-num_channels = 2;
-args.size = [size(im) 2];
-num_img = 6;
-for i = 1:num_img
-    img(i).im = Y(:,:,:,i);
-    img(i).label = labels(i);
-end
-
-mmcf_vector = build_mmcf_vector(img,args);
-otsdf_vector = build_otsdf_vector(img,args);
-uotsdf_vector = build_uotsdf_vector(img,args);
-
+b = otsdf.b;
+w = otsdf.filt;
 for i = 1:num_img
     corrplane = 0;
-    for j = 1:num_channels
-        corrplane = corrplane + xcorr2(Y(:,:,j,i),mmcf_vector.filt(:,:,j));
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(X(:,:,j,i),w(:,:,j));
     end
-    [corrplane,y,x] = compute_pce_plane(corrplane);
-    score = corrplane(x,y);
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
     mesh(corrplane);title(score);pause(1);    
 end
 
+b = uotsdf.b;
+w = uotsdf.filt;
 for i = 1:num_img
     corrplane = 0;
-    for j = 1:num_channels
-        corrplane = corrplane + xcorr2(Y(:,:,j,i),otsdf_vector.filt(:,:,j));
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(X(:,:,j,i),w(:,:,j));
     end
-    [corrplane,y,x] = compute_pce_plane(corrplane);
-    score = corrplane(x,y);
-    mesh(corrplane);title(score);pause(1);
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
 end
 
+b = mmcf_primal.b;
+w = mmcf_primal.filt;
 for i = 1:num_img
     corrplane = 0;
-    for j = 1:num_channels
-        corrplane = corrplane + xcorr2(Y(:,:,j,i),uotsdf_vector.filt(:,:,j));
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(X(:,:,j,i),w(:,:,j));
     end
-    [corrplane,y,x] = compute_pce_plane(corrplane);
-    score = corrplane(x,y);
-    mesh(corrplane);title(score);pause(1);
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+b = zauotsdf.b;
+w = zauotsdf.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(X(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+b = zammcf.b;
+w = zammcf.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(X(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+%% Vector Features
+% Y contains vector features
+
+[m,n,dim,num_img] = size(Y);
+
+args.C = 1;
+args.alpha = 1e-3;
+args.beta = 1-args.alpha;
+args.img_size = [m,n,dim];
+args.dim = dim;
+args.t_init = 100;
+args.tolerance = 1e-8;
+args.max_iter = 1e6;
+args.batch_size = 2500;
+args.psd_flag = 0;
+args.fft_size = [m,n];
+args.fft_mask = ones(args.fft_size(1),args.fft_size(2),dim);
+args.fft_mask(1:m,1:n,:) = 0;
+args.target_magnitude = 1;
+args.target_sigma = 0.2;
+data = Y;
+
+data_freq = fft2(data,args.fft_size(1),args.fft_size(2))/sqrt(prod(args.fft_size));
+otsdf = build_otsdf;
+uotsdf = build_uotsdf;
+% mmcf_dual = build_mmcf_dual;
+mmcf_primal = build_mmcf_primal;
+
+args.psd_flag = 0;
+args.fft_size = 2*[m,n]-1;
+args.fft_mask = ones(args.fft_size(1),args.fft_size(2),dim);
+args.fft_mask(1:m,1:n,:) = 0;
+data_freq = fft2(data,args.fft_size(1),args.fft_size(2))/sqrt(prod(args.fft_size));
+zauotsdf = build_zauotsdf;
+zammcf = build_zammcf_primal;
+
+b = otsdf.b;
+w = otsdf.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(Y(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+b = uotsdf.b;
+w = uotsdf.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(Y(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+b = mmcf_primal.b;
+w = mmcf_primal.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(Y(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+b = zauotsdf.b;
+w = zauotsdf.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(Y(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
+end
+
+b = zammcf.b;
+w = zammcf.filt;
+for i = 1:num_img
+    corrplane = 0;
+    for j = 1:size(w,3)
+        corrplane = corrplane + imfilter(Y(:,:,j,i),w(:,:,j));
+    end
+    corrplane = corrplane + b;
+    [score, loc, corrplane] = compute_pce_plane(corrplane);
+    mesh(corrplane);title(score);pause(1);    
 end

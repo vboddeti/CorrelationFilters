@@ -1,23 +1,15 @@
 % pre_whiten_data.m
 %
-%	* Created by Vishnu Naresh Boddeti on 5/22/13.
-%	* naresh@cmu.edu (http://www.cs.cmu.edu/~vboddeti)
-%	* Copyright 2013 Carnegie Mellon University. All rights reserved.
+% * Created by Vishnu Naresh Boddeti on 9/30/14.
+% * naresh@cmu.edu (http://vishnu.boddeti.net)
+% * Copyright 2014 Carnegie Mellon University. All rights reserved.
 
-function [X,Y,S] = pre_whiten_data(X,args)
+function img = pre_whiten_data(S,img)
 
-alpha = args.alpha;
-beta = args.beta;
-siz = args.size;
+[m,n,dim,num] = size(img);
 
-num_img = length(X);
-d = siz(1)*siz(2);
-X = fft_images(X, siz);
-
-D = mean(abs(X).^2,3)*d;
-D = D/max(D(:));
-S = alpha+beta*D;
-S = S/max(S(:));
-Y = X./repmat(S,[1,1,num_img]);
-X(1,1,:) = 0.0;
-Y(1,1,:) = 0.0;
+for i = 1:num
+    tmp = reshape(img(:,:,:,i),[m*n,dim]);
+    tmp = fusion_matrix_multiply(S,tmp,[dim,dim],[dim,1]);
+    img(:,:,:,i) = reshape(tmp,[m,n,dim]);
+end
