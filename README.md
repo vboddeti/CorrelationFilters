@@ -1,19 +1,19 @@
 CorrelationFilters
-==================
+=========================
 
-Welcome to the Correlation Filters library, a library developed at Carnegie Mellon University while obtaining my PhD in ECE.
--- Vishnu Naresh Boddeti
+### Dependencies
 
-The code is written in Matlab, a C++ version of this library will also be released soon.
+This library depends on the LIBSVM library freely available at http://www.csie.ntu.edu.tw/~cjlin/libsvm/ and LIBLINEAR which is freely available at http://www.csie.ntu.edu.tw/~cjlin/liblinear/
 
-This library depends on the LIBSVM library freely available at http://www.csie.ntu.edu.tw/~cjlin/libsvm/
+***
 
-==================
+### Usage
 
-Please see the demo file for examples on how to design the different correlation filters.
+Please see C++/main.cpp and MATLAB/scripts/demo.m files for examples on how to design the different correlation filters.
 
-==================
-**Copyright (C) 2013 by Vishnu Naresh Boddeti**
+***
+
+**Copyright (C) 2014 by Vishnu Naresh Boddeti**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,5 +30,4 @@ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

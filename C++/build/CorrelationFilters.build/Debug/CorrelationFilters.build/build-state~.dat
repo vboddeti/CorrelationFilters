@@ -1,0 +1,393 @@
+TCorrelationFilters
+v7
+r0
+t391541507.889477
+cCheck dependencies
+cCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/main.o /Users/vboddeti/Dropbox/CorrelationFilters/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CCorrelationFilters.o /Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm_utils.o /Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm.o /Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cLd /Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/CorrelationFilters normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004D5A274300000000000000EE
+t1297753923
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004BBD2CE90000000000002C18
+t1270689001
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/locale.h
+c000000004BBD2CE900000000000008F0
+t1270689001
+s2288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h
+c000000004A11EB240000000000001538
+t1242688292
+s5432
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004A11EB240000000000000C7E
+t1242688292
+s3198
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11EB2400000000000010DD
+t1242688292
+s4317
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h
+c000000004A11EB24000000000000190C
+t1242688292
+s6412
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfftw3.dylib
+c0000000051A4CB1700000000001921B0
+t1369754391
+s1647024
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfftw3f_threads.3.dylib
+c0000000051A4CA470000000000007928
+t1369754183
+s31016
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_calib3d.2.4.4.dylib
+c00000000518D93950000000000096098
+t1368232853
+s614552
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_contrib.2.4.4.dylib
+c00000000518D939500000000001308E8
+t1368232853
+s1247464
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_core.2.4.4.dylib
+c00000000518D93950000000000217D38
+t1368232853
+s2194744
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_features2d.2.4.4.dylib
+c00000000518D939500000000000AA4E8
+t1368232853
+s697576
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_flann.2.4.4.dylib
+c00000000518D939500000000000912D8
+t1368232853
+s594648
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_gpu.2.4.4.dylib
+c00000000518D9395000000000002F6F8
+t1368232853
+s194296
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_highgui.2.4.4.dylib
+c00000000518D93950000000000157B68
+t1368232853
+s1407848
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_imgproc.2.4.4.dylib
+c00000000518D939500000000001F7BD8
+t1368232853
+s2063320
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_legacy.2.4.4.dylib
+c00000000518D939500000000001216A8
+t1368232853
+s1185448
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_ml.2.4.4.dylib
+c00000000518D93950000000000070320
+t1368232853
+s459552
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_nonfree.2.4.4.dylib
+c00000000518D9395000000000001F6E8
+t1368232853
+s128744
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_objdetect.2.4.4.dylib
+c00000000518D93940000000000091D90
+t1368232852
+s597392
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_photo.2.4.4.dylib
+c00000000518D9394000000000001C8B8
+t1368232852
+s116920
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_stitching.2.4.4.dylib
+c00000000518D93940000000000085730
+t1368232852
+s546608
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_ts.2.4.4.dylib
+c00000000518D939400000000000A5238
+t1368232852
+s676408
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_video.2.4.4.dylib
+c00000000518D939400000000000447A8
+t1368232852
+s280488
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libopencv_videostab.2.4.4.dylib
+c00000000518D93940000000000038260
+t1368232852
+s229984
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp
+c0000000051A639B20000000000009C55
+t1369848242
+s40021
+i"CCorrelationFilters.h"
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.h
+c0000000051A639DD0000000000000E17
+t1369848285
+s3607
+i<iostream>
+i<fstream>
+i<Eigen/Dense>
+i<complex>
+i<fftw3.h>
+i<vector>
+i<algorithm>
+i"svm_utils.h"
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CCorrelationFilters.o
+t1369848707
+s15606872
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CorrelationFilters.LinkFileList
+c0000000051A63B7A000000000000022B
+t1369848698
+s555
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/main.o
+t1369848700
+s412904
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm.o
+t1369848699
+s153428
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm_utils.o
+t1369848700
+s316076
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/CorrelationFilters
+t2
+s0
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/eigen_extensions.h
+c0000000051A01EFA0000000000001336
+t1369448186
+s4918
+i<stdint.h>
+i<fstream>
+i<iostream>
+i<eigen3/Eigen/Eigen>
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/main.cpp
+c0000000051A628F80000000000000F03
+t1369843960
+s3843
+i"CCorrelationFilters.h"
+i"opencv2/opencv.hpp"
+i"opencv2/core/eigen.hpp"
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp
+c000000005158894A000000000000FC3F
+t1364756810
+s64575
+i<math.h>
+i<stdio.h>
+i<stdlib.h>
+i<ctype.h>
+i<float.h>
+i<string.h>
+i<stdarg.h>
+i<limits.h>
+i<locale.h>
+i"svm.h"
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/svm.h
+c00000000519E2B970000000000000D35
+t1369320343
+s3381
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp
+c0000000051A5657D0000000000001730
+t1369793917
+s5936
+i"svm_utils.h"
+i"eigen_extensions.h"
+
+N/Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.h
+c0000000051A4166F0000000000000845
+t1369708143
+s2117
+i<string>
+i<vector>
+i"svm.h"
+i<eigen3/Eigen/Eigen>
+
+N/usr/local/include/boost/algorithm
+c00000000511FBD970000000000000176
+t1361034647
+s374
+
+N/usr/local/include/boost/algorithm/string
+c00000000511FBD9700000000000003DA
+t1361034647
+s986
+
+N/usr/local/include/boost/math/complex
+c00000000511FBD7B0000000000000154
+t1361034619
+s340
+
+N/usr/local/include/boost/mpl/vector
+c00000000511FBD7000000000000001FE
+t1361034608
+s510
+
+N/usr/local/include/boost/tr1/tr1/fstream
+c000000005111C1A700000000000003E2
+t1360118183
+s994
+
+N/usr/local/include/boost/tr1/tr1/iostream
+c000000005111C1A700000000000003E9
+t1360118183
+s1001
+
+N/usr/local/include/eigen3/Eigen/Dense
+c00000000516D0000000000000000007A
+t1366097920
+s122
+
+N/usr/local/include/eigen3/Eigen/Eigen
+c00000000516D00000000000000000025
+t1366097920
+s37
+
+N/usr/local/include/fftw3.h
+c0000000051A4CB170000000000004546
+t1369754391
+s17734
+
+N/usr/local/include/opencv2/core/eigen.hpp
+c000000005130CCD100000000000024F9
+t1362152657
+s9465
+
+N/usr/local/include/opencv2/opencv.hpp
+c000000005130CCD10000000000000ABF
+t1362152657
+s2751
+
+N/usr/local/include/shogun/mathematics/Math.h
+c000000004EC5D58B000000000000A55B
+t1321588107
+s42331
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies391541498#391541498#0(0"0(0#1#0"8624997344#0"0#
+
+CCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CCorrelationFilters.o /Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s391541498.106617
+e391541507.715979
+r1
+xCompileC
+xbuild/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CCorrelationFilters.o
+x/Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp391541498#391541507#0(0"0(0#0#66"/Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp8620153856#4232"    cd /Users/vboddeti/Dropbox/CorrelationFilters    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-generated-files.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-own-target-headers.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-all-target-headers.hmap -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-project-headers.hmap -F/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug -I/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/include -I/usr/local/include -I/usr/local/include/eigen3 -I/usr/local/include/eigen3/Eigen -I/usr/local/include/eigen3/unsupported -I/usr/local/include/eigen3/Eigen/src -I/usr/local/include/eigen3/unsupported/Eigen -I/usr/local/include/eigen3/Eigen/src/Cholesky -I/usr/local/include/eigen3/Eigen/src/CholmodSupport -I/usr/local/include/eigen3/Eigen/src/Core -I/usr/local/include/eigen3/Eigen/src/Eigen2Support -I/usr/local/include/eigen3/Eigen/src/Eigenvalues -I/usr/local/include/eigen3/Eigen/src/Geometry -I/usr/local/include/eigen3/Eigen/src/Householder -I/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers -I/usr/local/include/eigen3/Eigen/src/Jacobi -I/usr/local/include/eigen3/Eigen/src/LU -I/usr/local/include/eigen3/Eigen/src/misc -I/usr/local/include/eigen3/Eigen/src/OrderingMethods -I/usr/local/include/eigen3/Eigen/src/PardisoSupport -I/usr/local/include/eigen3/Eigen/src/PaStiXSupport -I/usr/local/include/eigen3/Eigen/src/plugins -I/usr/local/include/eigen3/Eigen/src/QR -I/usr/local/include/eigen3/Eigen/src/SparseCholesky -I/usr/local/include/eigen3/Eigen/src/SparseCore -I/usr/local/include/eigen3/Eigen/src/StlSupport -I/usr/local/include/eigen3/Eigen/src/SuperLUSupport -I/usr/local/include/eigen3/Eigen/src/SVD -I/usr/local/include/eigen3/Eigen/src/UmfPackSupport -I/usr/local/include/eigen3/unsupported/Eigen/src -I/usr/local/include/eigen3/Eigen/src/Core/arch -I/usr/local/include/eigen3/Eigen/src/Core/products -I/usr/local/include/eigen3/Eigen/src/Core/util -I/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry -I/usr/local/include/eigen3/Eigen/src/Geometry/arch -I/usr/local/include/eigen3/Eigen/src/LU/arch -I/usr/local/include/eigen3/unsupported/Eigen/src/AutoDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/BVH -I/usr/local/include/eigen3/unsupported/Eigen/src/FFT -I/usr/local/include/eigen3/unsupported/Eigen/src/IterativeSolvers -I/usr/local/include/eigen3/unsupported/Eigen/src/KroneckerProduct -I/usr/local/include/eigen3/unsupported/Eigen/src/MatrixFunctions -I/usr/local/include/eigen3/unsupported/Eigen/src/MoreVectorization -I/usr/local/include/eigen3/unsupported/Eigen/src/NonLinearOptimization -I/usr/local/include/eigen3/unsupported/Eigen/src/NumericalDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/Polynomials -I/usr/local/include/eigen3/unsupported/Eigen/src/Skyline -I/usr/local/include/eigen3/unsupported/Eigen/src/SparseExtra -I/usr/local/include/eigen3/unsupported/Eigen/src/Splines -I/usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec -I/usr/local/include/eigen3/Eigen/src/Core/arch/Default -I/usr/local/include/eigen3/Eigen/src/Core/arch/NEON -I/usr/local/include/eigen3/Eigen/src/Core/arch/SSE -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources/x86_64 -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources -c /Users/vboddeti/Dropbox/CorrelationFilters/CCorrelationFilters.cpp -o /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CCorrelationFilters.o0#
+
+CCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/main.o /Users/vboddeti/Dropbox/CorrelationFilters/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s391541498.105879
+e391541500.810772
+r1
+xCompileC
+xbuild/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/main.o
+x/Users/vboddeti/Dropbox/CorrelationFilters/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/vboddeti/Dropbox/CorrelationFilters/main.cpp391541498#391541500#0(0"0(0#0#51"/Users/vboddeti/Dropbox/CorrelationFilters/main.cpp8620815808#4202"    cd /Users/vboddeti/Dropbox/CorrelationFilters    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-generated-files.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-own-target-headers.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-all-target-headers.hmap -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-project-headers.hmap -F/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug -I/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/include -I/usr/local/include -I/usr/local/include/eigen3 -I/usr/local/include/eigen3/Eigen -I/usr/local/include/eigen3/unsupported -I/usr/local/include/eigen3/Eigen/src -I/usr/local/include/eigen3/unsupported/Eigen -I/usr/local/include/eigen3/Eigen/src/Cholesky -I/usr/local/include/eigen3/Eigen/src/CholmodSupport -I/usr/local/include/eigen3/Eigen/src/Core -I/usr/local/include/eigen3/Eigen/src/Eigen2Support -I/usr/local/include/eigen3/Eigen/src/Eigenvalues -I/usr/local/include/eigen3/Eigen/src/Geometry -I/usr/local/include/eigen3/Eigen/src/Householder -I/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers -I/usr/local/include/eigen3/Eigen/src/Jacobi -I/usr/local/include/eigen3/Eigen/src/LU -I/usr/local/include/eigen3/Eigen/src/misc -I/usr/local/include/eigen3/Eigen/src/OrderingMethods -I/usr/local/include/eigen3/Eigen/src/PardisoSupport -I/usr/local/include/eigen3/Eigen/src/PaStiXSupport -I/usr/local/include/eigen3/Eigen/src/plugins -I/usr/local/include/eigen3/Eigen/src/QR -I/usr/local/include/eigen3/Eigen/src/SparseCholesky -I/usr/local/include/eigen3/Eigen/src/SparseCore -I/usr/local/include/eigen3/Eigen/src/StlSupport -I/usr/local/include/eigen3/Eigen/src/SuperLUSupport -I/usr/local/include/eigen3/Eigen/src/SVD -I/usr/local/include/eigen3/Eigen/src/UmfPackSupport -I/usr/local/include/eigen3/unsupported/Eigen/src -I/usr/local/include/eigen3/Eigen/src/Core/arch -I/usr/local/include/eigen3/Eigen/src/Core/products -I/usr/local/include/eigen3/Eigen/src/Core/util -I/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry -I/usr/local/include/eigen3/Eigen/src/Geometry/arch -I/usr/local/include/eigen3/Eigen/src/LU/arch -I/usr/local/include/eigen3/unsupported/Eigen/src/AutoDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/BVH -I/usr/local/include/eigen3/unsupported/Eigen/src/FFT -I/usr/local/include/eigen3/unsupported/Eigen/src/IterativeSolvers -I/usr/local/include/eigen3/unsupported/Eigen/src/KroneckerProduct -I/usr/local/include/eigen3/unsupported/Eigen/src/MatrixFunctions -I/usr/local/include/eigen3/unsupported/Eigen/src/MoreVectorization -I/usr/local/include/eigen3/unsupported/Eigen/src/NonLinearOptimization -I/usr/local/include/eigen3/unsupported/Eigen/src/NumericalDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/Polynomials -I/usr/local/include/eigen3/unsupported/Eigen/src/Skyline -I/usr/local/include/eigen3/unsupported/Eigen/src/SparseExtra -I/usr/local/include/eigen3/unsupported/Eigen/src/Splines -I/usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec -I/usr/local/include/eigen3/Eigen/src/Core/arch/Default -I/usr/local/include/eigen3/Eigen/src/Core/arch/NEON -I/usr/local/include/eigen3/Eigen/src/Core/arch/SSE -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources/x86_64 -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources -c /Users/vboddeti/Dropbox/CorrelationFilters/main.cpp -o /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm.o /Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s391541498.108816
+e391541499.121705
+r1
+xCompileC
+xbuild/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm.o
+x/Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp391541498#391541499#0(0"0(0#0#50"/Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp8619423968#4200"    cd /Users/vboddeti/Dropbox/CorrelationFilters    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-generated-files.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-own-target-headers.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-all-target-headers.hmap -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-project-headers.hmap -F/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug -I/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/include -I/usr/local/include -I/usr/local/include/eigen3 -I/usr/local/include/eigen3/Eigen -I/usr/local/include/eigen3/unsupported -I/usr/local/include/eigen3/Eigen/src -I/usr/local/include/eigen3/unsupported/Eigen -I/usr/local/include/eigen3/Eigen/src/Cholesky -I/usr/local/include/eigen3/Eigen/src/CholmodSupport -I/usr/local/include/eigen3/Eigen/src/Core -I/usr/local/include/eigen3/Eigen/src/Eigen2Support -I/usr/local/include/eigen3/Eigen/src/Eigenvalues -I/usr/local/include/eigen3/Eigen/src/Geometry -I/usr/local/include/eigen3/Eigen/src/Householder -I/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers -I/usr/local/include/eigen3/Eigen/src/Jacobi -I/usr/local/include/eigen3/Eigen/src/LU -I/usr/local/include/eigen3/Eigen/src/misc -I/usr/local/include/eigen3/Eigen/src/OrderingMethods -I/usr/local/include/eigen3/Eigen/src/PardisoSupport -I/usr/local/include/eigen3/Eigen/src/PaStiXSupport -I/usr/local/include/eigen3/Eigen/src/plugins -I/usr/local/include/eigen3/Eigen/src/QR -I/usr/local/include/eigen3/Eigen/src/SparseCholesky -I/usr/local/include/eigen3/Eigen/src/SparseCore -I/usr/local/include/eigen3/Eigen/src/StlSupport -I/usr/local/include/eigen3/Eigen/src/SuperLUSupport -I/usr/local/include/eigen3/Eigen/src/SVD -I/usr/local/include/eigen3/Eigen/src/UmfPackSupport -I/usr/local/include/eigen3/unsupported/Eigen/src -I/usr/local/include/eigen3/Eigen/src/Core/arch -I/usr/local/include/eigen3/Eigen/src/Core/products -I/usr/local/include/eigen3/Eigen/src/Core/util -I/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry -I/usr/local/include/eigen3/Eigen/src/Geometry/arch -I/usr/local/include/eigen3/Eigen/src/LU/arch -I/usr/local/include/eigen3/unsupported/Eigen/src/AutoDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/BVH -I/usr/local/include/eigen3/unsupported/Eigen/src/FFT -I/usr/local/include/eigen3/unsupported/Eigen/src/IterativeSolvers -I/usr/local/include/eigen3/unsupported/Eigen/src/KroneckerProduct -I/usr/local/include/eigen3/unsupported/Eigen/src/MatrixFunctions -I/usr/local/include/eigen3/unsupported/Eigen/src/MoreVectorization -I/usr/local/include/eigen3/unsupported/Eigen/src/NonLinearOptimization -I/usr/local/include/eigen3/unsupported/Eigen/src/NumericalDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/Polynomials -I/usr/local/include/eigen3/unsupported/Eigen/src/Skyline -I/usr/local/include/eigen3/unsupported/Eigen/src/SparseExtra -I/usr/local/include/eigen3/unsupported/Eigen/src/Splines -I/usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec -I/usr/local/include/eigen3/Eigen/src/Core/arch/Default -I/usr/local/include/eigen3/Eigen/src/Core/arch/NEON -I/usr/local/include/eigen3/Eigen/src/Core/arch/SSE -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources/x86_64 -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources -c /Users/vboddeti/Dropbox/CorrelationFilters/svm.cpp -o /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm.o0#
+
+CCompileC build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm_utils.o /Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s391541498.107652
+e391541500.135502
+r1
+xCompileC
+xbuild/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm_utils.o
+x/Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp391541498#391541500#0(0"0(0#0#56"/Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp8619589632#4212"    cd /Users/vboddeti/Dropbox/CorrelationFilters    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-generated-files.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-own-target-headers.hmap -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-all-target-headers.hmap -iquote /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/CorrelationFilters-project-headers.hmap -F/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug -I/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/include -I/usr/local/include -I/usr/local/include/eigen3 -I/usr/local/include/eigen3/Eigen -I/usr/local/include/eigen3/unsupported -I/usr/local/include/eigen3/Eigen/src -I/usr/local/include/eigen3/unsupported/Eigen -I/usr/local/include/eigen3/Eigen/src/Cholesky -I/usr/local/include/eigen3/Eigen/src/CholmodSupport -I/usr/local/include/eigen3/Eigen/src/Core -I/usr/local/include/eigen3/Eigen/src/Eigen2Support -I/usr/local/include/eigen3/Eigen/src/Eigenvalues -I/usr/local/include/eigen3/Eigen/src/Geometry -I/usr/local/include/eigen3/Eigen/src/Householder -I/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers -I/usr/local/include/eigen3/Eigen/src/Jacobi -I/usr/local/include/eigen3/Eigen/src/LU -I/usr/local/include/eigen3/Eigen/src/misc -I/usr/local/include/eigen3/Eigen/src/OrderingMethods -I/usr/local/include/eigen3/Eigen/src/PardisoSupport -I/usr/local/include/eigen3/Eigen/src/PaStiXSupport -I/usr/local/include/eigen3/Eigen/src/plugins -I/usr/local/include/eigen3/Eigen/src/QR -I/usr/local/include/eigen3/Eigen/src/SparseCholesky -I/usr/local/include/eigen3/Eigen/src/SparseCore -I/usr/local/include/eigen3/Eigen/src/StlSupport -I/usr/local/include/eigen3/Eigen/src/SuperLUSupport -I/usr/local/include/eigen3/Eigen/src/SVD -I/usr/local/include/eigen3/Eigen/src/UmfPackSupport -I/usr/local/include/eigen3/unsupported/Eigen/src -I/usr/local/include/eigen3/Eigen/src/Core/arch -I/usr/local/include/eigen3/Eigen/src/Core/products -I/usr/local/include/eigen3/Eigen/src/Core/util -I/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry -I/usr/local/include/eigen3/Eigen/src/Geometry/arch -I/usr/local/include/eigen3/Eigen/src/LU/arch -I/usr/local/include/eigen3/unsupported/Eigen/src/AutoDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/BVH -I/usr/local/include/eigen3/unsupported/Eigen/src/FFT -I/usr/local/include/eigen3/unsupported/Eigen/src/IterativeSolvers -I/usr/local/include/eigen3/unsupported/Eigen/src/KroneckerProduct -I/usr/local/include/eigen3/unsupported/Eigen/src/MatrixFunctions -I/usr/local/include/eigen3/unsupported/Eigen/src/MoreVectorization -I/usr/local/include/eigen3/unsupported/Eigen/src/NonLinearOptimization -I/usr/local/include/eigen3/unsupported/Eigen/src/NumericalDiff -I/usr/local/include/eigen3/unsupported/Eigen/src/Polynomials -I/usr/local/include/eigen3/unsupported/Eigen/src/Skyline -I/usr/local/include/eigen3/unsupported/Eigen/src/SparseExtra -I/usr/local/include/eigen3/unsupported/Eigen/src/Splines -I/usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec -I/usr/local/include/eigen3/Eigen/src/Core/arch/Default -I/usr/local/include/eigen3/Eigen/src/Core/arch/NEON -I/usr/local/include/eigen3/Eigen/src/Core/arch/SSE -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources/x86_64 -I/Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/DerivedSources -c /Users/vboddeti/Dropbox/CorrelationFilters/svm_utils.cpp -o /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/svm_utils.o0#
+
+CLd /Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/CorrelationFilters normal x86_64
+s391541507.716114
+e391541507.889430
+r0
+xLd
+x/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/CorrelationFilters
+xnormal
+xx86_64
+oUndefined symbols:
+o  "_fftw_plan_with_nthreads", referenced from:
+o      CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o
+o  "_fftw_init_threads", referenced from:
+o      CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o
+o  "_fftw_cleanup_threads", referenced from:
+o      CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o
+old: symbol(s) not found
+ocollect2: ld returned 1 exit status
+lSLF07#2@78"Link /Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/CorrelationFilters391541507#391541507#0(457"Undefined symbols:  "_fftw_plan_with_nthreads", referenced from:      CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o  "_fftw_init_threads", referenced from:      CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o  "_fftw_cleanup_threads", referenced from:      CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.old: symbol(s) not foundcollect2: ld returned 1 exit status8(4@44""_fftw_plan_with_nthreads", referenced from:391541507#19#47#0(6@0"391541507#0#0#0#0#0"0(13@75"CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o391541507#66#82#0(6@0"391541507#0#0#0#0#0"0(4@38""_fftw_init_threads", referenced from:391541507#148#41#0(6@0"391541507#0#0#0#0#0"0(13@75"CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o391541507#189#82#0(6@0"391541507#0#0#0#0#0"0(4@41""_fftw_cleanup_threads", referenced from:391541507#271#44#0(6@0"391541507#0#0#0#0#0"0(13@75"CCorrelationFilters::fft2_data(CDataStruct*)       in CCorrelationFilters.o391541507#315#82#0(6@0"391541507#0#0#0#0#0"0(13@19"Symbol(s) not found391541507#397#24#0(6@0"391541507#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status391541507#421#36#0(6@0"391541507#0#0#0#0#0"0(0#0#0"8625501280#974"    cd /Users/vboddeti/Dropbox/CorrelationFilters    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug -F/Users/vboddeti/Dropbox/CorrelationFilters/build/Debug -filelist /Users/vboddeti/Dropbox/CorrelationFilters/build/CorrelationFilters.build/Debug/CorrelationFilters.build/Objects-normal/x86_64/CorrelationFilters.LinkFileList -mmacosx-version-min=10.6 -lfftw3f -lfftw3 -lopencv_calib3d.2.4.4 -lopencv_contrib.2.4.4 -lopencv_core.2.4.4 -lopencv_features2d.2.4.4 -lopencv_flann.2.4.4 -lopencv_gpu.2.4.4 -lopencv_highgui.2.4.4 -lopencv_imgproc.2.4.4 -lopencv_legacy.2.4.4 -lopencv_ml.2.4.4 -lopencv_nonfree.2.4.4 -lopencv_objdetect.2.4.4 -lopencv_photo.2.4.4 -lopencv_stitching.2.4.4 -lopencv_ts.2.4.4 -lopencv_video.2.4.4 -lopencv_videostab.2.4.4 -lfftw3f_threads.3 -o /Users/vboddeti/Dropbox/CorrelationFilters/build/Debug/CorrelationFilters1#
+
